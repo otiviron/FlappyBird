@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EB240726292A347100C9A1AD /* voice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB240725292A347100C9A1AD /* voice.mp3 */; };
+		EB240728292A3D0B00C9A1AD /* falling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB240727292A3D0B00C9A1AD /* falling.mp3 */; };
+		EB24072A292A3D0F00C9A1AD /* powerdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB240729292A3D0F00C9A1AD /* powerdown.mp3 */; };
+		EB24072C292A3D1500C9A1AD /* jump06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB24072B292A3D1500C9A1AD /* jump06.mp3 */; };
 		EB3887AA29227DA600E21BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3887A929227DA600E21BBA /* AppDelegate.swift */; };
 		EB3887AC29227DA600E21BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3887AB29227DA600E21BBA /* SceneDelegate.swift */; };
 		EB3887AE29227DA600E21BBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3887AD29227DA600E21BBA /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		EB240725292A347100C9A1AD /* voice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice.mp3; sourceTree = "<group>"; };
+		EB240727292A3D0B00C9A1AD /* falling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = falling.mp3; sourceTree = "<group>"; };
+		EB240729292A3D0F00C9A1AD /* powerdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = powerdown.mp3; sourceTree = "<group>"; };
+		EB24072B292A3D1500C9A1AD /* jump06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jump06.mp3; sourceTree = "<group>"; };
 		EB3887A629227DA600E21BBA /* FlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3887A929227DA600E21BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB3887AB29227DA600E21BBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 				EB3887B429227DA700E21BBA /* LaunchScreen.storyboard */,
 				EB3887B729227DA700E21BBA /* Info.plist */,
 				EB240725292A347100C9A1AD /* voice.mp3 */,
+				EB240727292A3D0B00C9A1AD /* falling.mp3 */,
+				EB240729292A3D0F00C9A1AD /* powerdown.mp3 */,
+				EB24072B292A3D1500C9A1AD /* jump06.mp3 */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -131,10 +140,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB24072C292A3D1500C9A1AD /* jump06.mp3 in Resources */,
+				EB24072A292A3D0F00C9A1AD /* powerdown.mp3 in Resources */,
 				EB3887B629227DA700E21BBA /* LaunchScreen.storyboard in Resources */,
 				EB240726292A347100C9A1AD /* voice.mp3 in Resources */,
 				EB3887B329227DA700E21BBA /* Assets.xcassets in Resources */,
 				EB3887B129227DA600E21BBA /* Main.storyboard in Resources */,
+				EB240728292A3D0B00C9A1AD /* falling.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

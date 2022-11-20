@@ -361,11 +361,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // 壁を表示するノードに壁の作成を無限に繰り返すアクションを設定
         itemNode.run(appleForeverAnimation)
     }
-    
-    func makeSound() {
-        let sound = SKAction.playSoundFileNamed("voice.mp3", waitForCompletion: true)
-        run(sound)
-    }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
@@ -375,6 +370,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             bird.physicsBody?.velocity = CGVector.zero
             //鳥に縦方向の力を与える
             bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 15))
+            
+            jumpSound()
             
         }else if bird.speed == 0 {
             restart()
@@ -440,10 +437,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             //衝突後１秒間、鳥を回転させる
             let roll = SKAction.rotate(byAngle: CGFloat(Double.pi) * CGFloat(bird.position.y * 0.01), duration: 1)
+            
             //回転が終わったときにbirdのスピードを０にする、完全停止
             bird.run(roll, completion:{
                 self.bird.speed = 0
             })
+            
+            fallSound()
         }
     }
     
@@ -477,6 +477,24 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         //スクロールを再開させる
         scrollNode.speed = 1
         
+    }
+    
+    func makeSound() {
+        let sound = SKAction.playSoundFileNamed("voice.mp3", waitForCompletion: true)
+        run(sound)
+    }
+    
+    func jumpSound() {
+        let sound = SKAction.playSoundFileNamed("jump06.mp3", waitForCompletion: true)
+        run(sound)
+    }
+    
+    func fallSound() {
+        let sound = SKAction.playSoundFileNamed("falling.mp3", waitForCompletion: true)
+        run(sound)
+        
+        let sound2 = SKAction.playSoundFileNamed("powerdown.mp3", waitForCompletion: true)
+        run(sound2)
     }
     
     func setupScoreLabel() {
