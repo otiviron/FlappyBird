@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB240726292A347100C9A1AD /* voice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB240725292A347100C9A1AD /* voice.mp3 */; };
 		EB3887AA29227DA600E21BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3887A929227DA600E21BBA /* AppDelegate.swift */; };
 		EB3887AC29227DA600E21BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3887AB29227DA600E21BBA /* SceneDelegate.swift */; };
 		EB3887AE29227DA600E21BBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3887AD29227DA600E21BBA /* ViewController.swift */; };
 		EB3887B129227DA600E21BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3887AF29227DA600E21BBA /* Main.storyboard */; };
 		EB3887B329227DA700E21BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3887B229227DA700E21BBA /* Assets.xcassets */; };
 		EB3887B629227DA700E21BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3887B429227DA700E21BBA /* LaunchScreen.storyboard */; };
+		EB3887BE2923D08B00E21BBA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3887BD2923D08B00E21BBA /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB240725292A347100C9A1AD /* voice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice.mp3; sourceTree = "<group>"; };
 		EB3887A629227DA600E21BBA /* FlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3887A929227DA600E21BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB3887AB29227DA600E21BBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		EB3887B229227DA700E21BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB3887B529227DA700E21BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB3887B729227DA700E21BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3887BD2923D08B00E21BBA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				EB3887A929227DA600E21BBA /* AppDelegate.swift */,
 				EB3887AB29227DA600E21BBA /* SceneDelegate.swift */,
+				EB3887BD2923D08B00E21BBA /* GameScene.swift */,
 				EB3887AD29227DA600E21BBA /* ViewController.swift */,
 				EB3887AF29227DA600E21BBA /* Main.storyboard */,
 				EB3887B229227DA700E21BBA /* Assets.xcassets */,
 				EB3887B429227DA700E21BBA /* LaunchScreen.storyboard */,
 				EB3887B729227DA700E21BBA /* Info.plist */,
+				EB240725292A347100C9A1AD /* voice.mp3 */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB3887B629227DA700E21BBA /* LaunchScreen.storyboard in Resources */,
+				EB240726292A347100C9A1AD /* voice.mp3 in Resources */,
 				EB3887B329227DA700E21BBA /* Assets.xcassets in Resources */,
 				EB3887B129227DA600E21BBA /* Main.storyboard in Resources */,
 			);
@@ -140,6 +147,7 @@
 			files = (
 				EB3887AE29227DA600E21BBA /* ViewController.swift in Sources */,
 				EB3887AA29227DA600E21BBA /* AppDelegate.swift in Sources */,
+				EB3887BE2923D08B00E21BBA /* GameScene.swift in Sources */,
 				EB3887AC29227DA600E21BBA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +304,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +314,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,7 +332,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
